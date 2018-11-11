@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0916EBE02195888B00C3A3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916EBDF2195888B00C3A3A8 /* AppDelegate.swift */; };
-		0916EBE22195888B00C3A3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916EBE12195888B00C3A3A8 /* ViewController.swift */; };
+		0916EBE22195888B00C3A3A8 /* BatteryTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916EBE12195888B00C3A3A8 /* BatteryTrackingViewController.swift */; };
 		0916EBE52195888B00C3A3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0916EBE32195888B00C3A3A8 /* Main.storyboard */; };
 		0916EBE82195888B00C3A3A8 /* Battery_Tracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0916EBE62195888B00C3A3A8 /* Battery_Tracking.xcdatamodeld */; };
 		0916EBEA2195888C00C3A3A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0916EBE92195888C00C3A3A8 /* Assets.xcassets */; };
 		0916EBED2195888C00C3A3A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0916EBEB2195888C00C3A3A8 /* LaunchScreen.storyboard */; };
 		0916EBF82195888C00C3A3A8 /* Battery_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916EBF72195888C00C3A3A8 /* Battery_TrackingTests.swift */; };
 		0916EC032195888C00C3A3A8 /* Battery_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916EC022195888C00C3A3A8 /* Battery_TrackingUITests.swift */; };
+		09708EF02198898400AF129A /* BatteryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09708EEF2198898400AF129A /* BatteryCollectionViewCell.swift */; };
+		09708EF321989EDD00AF129A /* BatterySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09708EF221989EDD00AF129A /* BatterySample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0916EBDC2195888B00C3A3A8 /* Battery Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0916EBDF2195888B00C3A3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0916EBE12195888B00C3A3A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0916EBE12195888B00C3A3A8 /* BatteryTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTrackingViewController.swift; sourceTree = "<group>"; };
 		0916EBE42195888B00C3A3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0916EBE72195888B00C3A3A8 /* Battery_Tracking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Battery_Tracking.xcdatamodel; sourceTree = "<group>"; };
 		0916EBE92195888C00C3A3A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		0916EBFE2195888C00C3A3A8 /* Battery TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Battery TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0916EC022195888C00C3A3A8 /* Battery_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery_TrackingUITests.swift; sourceTree = "<group>"; };
 		0916EC042195888C00C3A3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09708EEF2198898400AF129A /* BatteryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCollectionViewCell.swift; sourceTree = "<group>"; };
+		09708EF221989EDD00AF129A /* BatterySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterySample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		0916EBDE2195888B00C3A3A8 /* Battery Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				09708EF121989EB900AF129A /* Model */,
+				09708EEC21984E4900AF129A /* Battery Tracking View Controllers */,
 				0916EBDF2195888B00C3A3A8 /* AppDelegate.swift */,
-				0916EBE12195888B00C3A3A8 /* ViewController.swift */,
 				0916EBE32195888B00C3A3A8 /* Main.storyboard */,
+				0916EBE12195888B00C3A3A8 /* BatteryTrackingViewController.swift */,
 				0916EBE92195888C00C3A3A8 /* Assets.xcassets */,
 				0916EBEB2195888C00C3A3A8 /* LaunchScreen.storyboard */,
 				0916EBEE2195888C00C3A3A8 /* Info.plist */,
@@ -126,6 +132,22 @@
 				0916EC042195888C00C3A3A8 /* Info.plist */,
 			);
 			path = "Battery TrackingUITests";
+			sourceTree = "<group>";
+		};
+		09708EEC21984E4900AF129A /* Battery Tracking View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09708EEF2198898400AF129A /* BatteryCollectionViewCell.swift */,
+			);
+			path = "Battery Tracking View Controllers";
+			sourceTree = "<group>";
+		};
+		09708EF121989EB900AF129A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09708EF221989EDD00AF129A /* BatterySample.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0916EBE22195888B00C3A3A8 /* ViewController.swift in Sources */,
+				09708EF02198898400AF129A /* BatteryCollectionViewCell.swift in Sources */,
+				0916EBE22195888B00C3A3A8 /* BatteryTrackingViewController.swift in Sources */,
 				0916EBE02195888B00C3A3A8 /* AppDelegate.swift in Sources */,
 				0916EBE82195888B00C3A3A8 /* Battery_Tracking.xcdatamodeld in Sources */,
+				09708EF321989EDD00AF129A /* BatterySample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
